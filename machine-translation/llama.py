@@ -12,10 +12,10 @@ import os
 import wandb
 
 # ----------------------------------------------------------------------------------------------
-wandb.login(key="422af8259e8566f1d41a435099d066bf3fb3a5d7")  # 替換 YOUR_API_KEY 為你的 API 密鑰
+wandb.login(key="XXXXXXXXXXXXXXXXXXXX")  # 替換 YOUR_API_KEY 為你的 API 密鑰
 
 model_id = 'meta-llama/Meta-Llama-3-8B'
-token = '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' # 替換為你的 Token
+token = 'XXXXXXXXXXXXXXXXXXXXXX' # 替換為你的 Token
 
 tokenizers = AutoTokenizer.from_pretrained(model_id, token=token, trust_remote_code=True)
 tokenizers.pad_token_id = 0
